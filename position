@@ -1,0 +1,5 @@
+static: default
+relative: left, right, top, bottom take effect
+fixed: relative to the viewport
+absolute: relative to the nearest positioned ancestor
+sticky: sticks when you reach its scroll position, like sticky menu
