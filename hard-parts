@@ -1,0 +1,63 @@
+
+
+
+// box-sizing	Defines how the width and height of an element are calculated: should they include padding and borders, or not
+If you set box-sizing: border-box; on an element, padding and border are included in the width and height
+
+
+// var()	Inserts the value of a CSS variable
+Ref: https://www.w3schools.com/css/css3_variables.asp
+
+
+//-- CSS Object-* Properties --//
+The following table lists the CSS object-* properties:
+
+object-fit	Specifies how an <img> or <video> should be resized to fit its container
+object-position	Specifies how an <img> or <video> should be positioned with x/y coordinates inside its "own content box"
+  
+The object-fit property can take one of the following values:
+fill - This is default. The image is resized to fill the given dimension. If necessary, the image will be stretched or squished to fit
+contain - The image keeps its aspect ratio, but is resized to fit within the given dimension
+cover - The image keeps its aspect ratio and fills the given dimension. The image will be clipped to fit
+none - The image is not resized
+scale-down - the image is scaled down to the smallest version of none or contain
+
+
+// Two important use of important are: 1) When no other way to change because of highr priority 2) When conflict because of nesting
+
+
+//-- All CSS Attribute Selectors --//
+[attribute]	[target]	Selects all elements with a target attribute
+[attribute=value]	[target="_blank"]	Selects all elements with target="_blank"
+[attribute~=value]	[title~="flower"]	Selects all elements with a title attribute that contains a space-separated list of words, one of which is "flower"
+[attribute|=value]	[lang|="en"]	Selects all elements with a lang attribute value starting with "en"
+[attribute^=value]	a[href^="https"]	Selects all <a> elements with a href attribute value starting with "https"
+[attribute$=value]	a[href$=".pdf"]	Selects all <a> elements with a href attribute value ending with ".pdf"
+[attribute*=value]	a[href*="w3schools"]	Selects all <a> elements with a href attribute value containing the substring "w3schools"
+
+
+//-- Automatic Numbering With Counters --//
+To work with CSS counters we will use the following properties:
+counter-reset - Creates or resets a counter
+counter-increment - Increments a counter value
+content - Inserts generated content
+counter() or counters() function - Adds the value of a counter to an element
+Ref: https://www.w3schools.com/css/css_counters.asp
+
+
+//-- All CSS Pseudo Elements  --//
+Selector	Example	Example description
+::after	p::after	Insert something after the content of each <p> element
+::before	p::before	Insert something before the content of each <p> element
+::first-letter	p::first-letter	Selects the first letter of each <p> element
+::first-line	p::first-line	Selects the first line of each <p> element
+::marker	::marker	Selects the markers of list items
+::selection	p::selection	Selects the portion of an element that is selected by a user
+
+
+//-- Position --//
+static: default
+relative: left, right, top, bottom take effect
+fixed: relative to the viewport
+absolute: relative to the nearest positioned ancestor
+sticky: sticks when you reach its scroll position, like sticky menu
